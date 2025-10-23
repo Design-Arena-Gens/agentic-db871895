@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0f1c;
+  --foreground: #e6eefc;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: radial-gradient(1200px 1200px at 80% -10%, rgba(30, 134, 255, .08), transparent 60%),
+              radial-gradient(800px 800px at -10% 20%, rgba(75, 168, 255, .06), transparent 60%),
+              #0a0f1c;
+  background-attachment: fixed;
+}
+
+.container { @apply mx-auto max-w-7xl px-6; }
+
+.section-title { @apply text-3xl md:text-4xl font-display font-semibold; }
+
+.subtext { @apply text-white/70; }
